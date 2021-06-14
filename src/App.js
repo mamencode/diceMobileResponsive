@@ -45,7 +45,7 @@ export default function App() {
     if (playing) {
       scores[active] += currentScore;
       document.getElementById(`score--${active}`).textContent = scores[active];
-      if (scores[active] >= 20) {
+      if (scores[active] >= 100) {
         setPlaying(false);
         setImgSrc(null);
         document
